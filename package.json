@@ -3,16 +3,33 @@
   "version": "0.5.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
-    "export": "next export"
+    "start": "next start",
+    "export": "npm run build && next export"
   },
   "dependencies": {
-    "next": "^12.0.7",
+    "next": "^12.0.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.0.0"
-  }
+    "@babel/core": "^7.17.0",
+    "@babel/preset-react": "^7.16.7",
+    "@netlify/plugin-nextjs": "^4.0.0",
+    "frontmatter-markdown-loader": "^3.6.3"
+  },
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/46648482-644c-4c80-bafb-872057e51b6b/deploy-status)](https://app.netlify.com/sites/next-dev-starter/deploys)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vnn8248/next-netlify-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vnn8248/next-netlify-starter/issues"
+  },
+  "homepage": "https://github.com/vnn8248/next-netlify-starter#readme"
 }
